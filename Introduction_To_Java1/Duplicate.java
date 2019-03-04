@@ -4,9 +4,10 @@ public class Duplicate
 {
     public static void main(String[] args)
     {
+    
         String string="My name is rishabh & my EmailID is Rishabh.Khatreja03@gmail.com. Rishabh is my name";
         String[] words=string.split(" ");
-        int count;
+        int count,temp=0;
         for(int i=0;i<words.length;i++)
         {
             count=1;
@@ -21,9 +22,10 @@ public class Duplicate
          if(words[i]!="" && count>1)
          {
              System.out.println(words[i]+"="+count);
+             ++temp;
          }
-
         }
+        System.out.println("duplicate words occurence in the string is="+temp);
     }
 }
 /*
